@@ -17,6 +17,8 @@
             --white: #ffffff;
             --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             --transition: all 0.3s ease;
+	    --deep-blue: #0A1628
+	    --gold: #F5A623
          }
 
          * {
@@ -331,7 +333,7 @@
 
    background: 
       linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
-      url('kids.jpg');
+      url('home2.jpeg');
 
    background-size: cover;
    background-position: center;
@@ -466,6 +468,188 @@
             max-width: 600px;
             margin: 0 auto;
          }
+
+            /*--- About --> */
+
+            /*--- About --> */
+
+.about-new {
+  padding: 0;
+  max-width: 100%;
+  margin: 0 auto;
+  background: #fafbfc;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.about-new.visible {
+  opacity: 1;
+}
+
+/* ===== ABOUT HERO HEADER ===== */
+.about-hero {
+  text-align: center;
+  padding: 100px 20px 80px;
+  background: linear-gradient(135deg, #f08604 0%, #f37f04 50%, #f34106 100%);
+  
+  color: #fff;
+  position: relative;
+}
+
+.about-hero h2 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.about-hero p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* ===== ABOUT CONTENT ===== */
+.about-content {
+  padding: 100px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-new .section-header {
+  margin-bottom: 60px;
+}
+
+.about-new .section-header h2 {
+  font-size: 2.5rem;
+  color: #0f172a;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.about-new .section-header p {
+  font-size: 1.1rem;
+  color: #64748b;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+
+
+
+
+
+/* About subsections */
+.about-subsection {
+  margin-bottom: 80px;
+}
+
+.about-subsection h3 {
+  font-size: 1.8rem;
+  color: #0f172a;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.about-subsection > p {
+  text-align: center;
+  color: #64748b;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.about-card {
+  padding: 30px;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 2px solid #f0f1f5;
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.about-card:nth-child(1) {
+  border-left: 6px solid #8b7c6e;
+  background: linear-gradient(135deg, #f5f3f0 0%, #ffffff 100%);
+}
+
+.about-card:nth-child(2) {
+  border-left: 6px solid #d4a574;
+  background: linear-gradient(135deg, #fef5ec 0%, #ffffff 100%);
+}
+
+.about-card:nth-child(3) {
+  border-left: 6px solid #7ec87e;
+  background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+}
+
+.about-card:nth-child(4) {
+  border-left: 6px solid #5c9ea3;
+  background: linear-gradient(135deg, #ecfcf9 0%, #ffffff 100%);
+}
+
+.about-card:nth-child(5) {
+  border-left: 6px solid #5a7fa3;
+  background: linear-gradient(135deg, #ecf5ff 0%, #ffffff 100%);
+}
+
+.about-card:nth-child(6) {
+  border-left: 6px solid #6d5a8c;
+  background: linear-gradient(135deg, #f4f1ff 0%, #ffffff 100%);
+}
+
+.about-card:nth-child(7) {
+  border-left: 6px solid #d68f4c;
+  background: linear-gradient(135deg, #fffbf5 0%, #ffffff 100%);
+}
+
+.about-card:nth-child(8) {
+  border-left: 6px solid #c96f4f;
+  background: linear-gradient(135deg, #fff5f1 0%, #ffffff 100%);
+}
+
+.about-card:nth-child(9) {
+  border-left: 6px solid #b84c4f;
+  background: linear-gradient(135deg, #fff0f0 0%, #ffffff 100%);
+}
+
+.about-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  border-color: #f59e0b;
+}
+
+.about-card span {
+  font-size: 40px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.about-card h3,
+.about-card h4 {
+  color: #0f172a;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.about-card p {
+  font-size: 14px;
+  color: #64748b;
+  line-height: 1.6;
+}
 
          /* ============ DOMAINS ============ */
          .domains {
@@ -1356,7 +1540,7 @@
      <header class="main-header" id="header">
          <div class="header-container">
             <div class="logo-wrapper">
-               <img src="logo.jpeg" class="logo" alt="EduXtend 360 Logo">
+               <img src="Picture2.png" class="logo" alt="EduXtend 360 Logo">
                <span class="logo-text">EduXtend 360</span>
             </div>
             
@@ -1371,6 +1555,7 @@
                   <!-- Updated Home link -->
    <a href="#" onclick="showHomePage()">Home</a>
 <a href="#" onclick="showAboutPage()" >About</a>
+
    <!-- Keep Domains link as is -->
    <a href="#" onclick="scrollToDomains()">Domains</a>
  
@@ -1496,8 +1681,215 @@
       </div>
    </div>
 </section>
+  
+<!-- <! -- About --> 
+
+<!-- <! -- About --> 
+
+<section class="about-new" id="aboutPage" style="display:none;">
+
+  <!-- ABOUT HERO HEADER -->
+  <div class="about-hero">
+    <button class="back-home-btn" onclick="showHomePage()">← Back to Home</button>
+    <h2>Why EduXtend Exists</h2>
+    <p>
+      India has millions of students in schools. We teach them to pass exams.  
+      EduXtend exists to prepare them for life.
+    </p>
+  </div>
+
+  <!-- ABOUT CONTENT -->
+  <div class="about-content">
+
+    <!-- INDIA BY NUMBERS -->
+    <div class="about-subsection">
+      <h3>India's Education — By the Numbers</h3>
+      <div class="about-grid">
+
+        <div class="about-card">
+          <h4>250M+</h4>
+          <p>School-going children in India</p>
+        </div>
+
+        <div class="about-card">
+          <h4>76%</h4>
+          <p>Graduates lack employability skills</p>
+        </div>
+
+        <div class="about-card">
+          <h4>47%</h4>
+          <p>Youth face stress & anxiety early</p>
+        </div>
+
+        <div class="about-card">
+          <h4>40%</h4>
+          <p>Students drop out before completion</p>
+        </div>
+
+      </div>
+    </div>
+
+   
+
+  
       
 
+  <!-- GAP -->
+  <div class="about-subsection">
+    <h3>The Gap Between School & Life</h3>
+    <div class="about-grid">
+
+      <div class="about-card">
+        <span>📚</span>
+        <h4>Marks Over Meaning</h4>
+        <p>Focus on marks instead of real understanding and growth.</p>
+      </div>
+
+      <div class="about-card">
+        <span>🧠</span>
+        <h4>No Emotional Education</h4>
+        <p>Students aren’t taught how to handle emotions.</p>
+      </div>
+
+      <div class="about-card">
+        <span>💰</span>
+        <h4>No Financial Skills</h4>
+        <p>Money management is missing from schooling.</p>
+      </div>
+
+      <div class="about-card">
+        <span>🗣️</span>
+        <h4>Communication Gap</h4>
+        <p>Students struggle to express confidently.</p>
+      </div>
+
+      <div class="about-card">
+        <span>🌿</span>
+        <h4>Low Awareness</h4>
+        <p>Environment is taught but not practiced.</p>
+      </div>
+
+      <div class="about-card">
+        <span>🏃</span>
+        <h4>Health Ignored</h4>
+        <p>Real wellness habits are not built.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- GLOBAL -->
+  <div class="about-subsection">
+    <h3>What the World is Teaching</h3>
+    <p>
+      Global education focuses on life skills, emotional intelligence, creativity,
+      and real-world readiness — not just memorization.
+    </p>
+  </div>
+
+  <!-- SHIFT -->
+  <div class="about-subsection">
+    <h3>The Shift is Already Happening</h3>
+    <div class="about-grid">
+
+      <div class="about-card">
+        <h4>CBSE</h4>
+        <p>Moving towards competency-based learning.</p>
+      </div>
+
+      <div class="about-card">
+        <h4>NEP 2020</h4>
+        <p>Focus on holistic and skill-based education.</p>
+      </div>
+
+      <div class="about-card">
+        <h4>IB</h4>
+        <p>Strong focus on creativity and real-world learning.</p>
+      </div>
+
+      <div class="about-card">
+        <h4>IGCSE</h4>
+        <p>Global perspective and applied knowledge.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 9 LIFE POWERS -->
+  <div class="about-subsection">
+    <h3>The 9 Life Powers</h3>
+
+    <div class="about-grid">
+
+      <div class="about-card"><span>🧠</span><h4>Emotional Intelligence</h4></div>
+      <div class="about-card"><span>💬</span><h4>Communication</h4></div>
+      <div class="about-card"><span>💰</span><h4>Financial Literacy</h4></div>
+      <div class="about-card"><span>🌿</span><h4>Environment</h4></div>
+      <div class="about-card"><span>🎨</span><h4>Creativity</h4></div>
+      <div class="about-card"><span>🏃</span><h4>Health</h4></div>
+      <div class="about-card"><span>🤝</span><h4>Social Responsibility</h4></div>
+      <div class="about-card"><span>💡</span><h4>Critical Thinking</h4></div>
+      <div class="about-card"><span>🌐</span><h4>Digital Literacy</h4></div>
+
+    </div>
+  </div>
+
+  <!-- HOW WE BRIDGE -->
+  <div class="about-subsection">
+    <h3>How EduXtend Bridges the Gap</h3>
+    <div class="about-grid">
+
+      <div class="about-card">
+        <span>🎓</span>
+        <h4>Awareness Programs</h4>
+      </div>
+
+      <div class="about-card">
+        <span>📱</span>
+        <h4>Edu Content</h4>
+      </div>
+
+      <div class="about-card">
+        <span>🏫</span>
+        <h4>School Integration</h4>
+      </div>
+
+      <div class="about-card">
+        <span>👨‍👩‍👧</span>
+        <h4>Parent Empowerment</h4>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- GOVT -->
+  <div class="about-subsection">
+    <h3>India’s Government is With Us</h3>
+    <p>
+      EduXtend aligns with NEP 2020, Skill India, Fit India, and Digital India —
+      supporting India’s vision of holistic education.
+    </p>
+  </div>
+
+  <!-- JOURNEY -->
+  <div class="about-subsection">
+    <h3>How EduXtend Evolved</h3>
+    <p>
+      EduXtend was born from real classroom observations, global research,
+      and the need to prepare children not just for exams — but for life.
+    </p>
+  </div>
+
+  <!-- FINAL -->
+  <div class="section-header">
+    <h2>Education Extended. Life Unlocked.</h2>
+    <p>
+      EduXtend is not just a program. It is a movement to empower every child
+      with the skills to live, grow, and succeed in the real world.
+    </p>
+  </div>
+
+</section>
       <!-- DOMAINS -->
       <section class="section" id="domains">
          <div class="section-header">
@@ -2197,7 +2589,7 @@ if (companions) companions.style.display = "none";
   if (stages) stages.style.display = "none";
 
   // Hide all pages
-  ["learningPlatformPage","powerPage","franchisePage","mediaPage","communityPage"]
+  ["learningPlatformPage","powerPage","franchisePage","mediaPage","communityPage", "aboutPage"]
     .forEach(id => {
       const el = document.getElementById(id);
       if (el) {
@@ -2259,6 +2651,19 @@ function showCommunityPage() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
+function showAboutPage() {
+  hideAllPages();
+
+  const page = document.getElementById("aboutPage");
+  page.style.display = "block";
+  setTimeout(() => page.classList.add("visible"), 10);
+
+  window.scrollTo({ top: 0, behavior: "smooth" });
+
+  // trigger animation check
+  showAboutCards();
+}
+
 
 /* ================= HOME ================= */
 
@@ -2288,6 +2693,8 @@ function showHomePage() {
 
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
+
+
 /* ================= OTHER ================= */
 
 // Smooth scroll
